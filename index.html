@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern E-Commerce</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar with Smooth Scroll -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-gradient">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">TannuRakhi</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#productList">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#offersList">Today's Offers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blogList">Blog</a>
+                    </li>
+                    <li class="nav-item"></li>
+                        <a class="nav-link" href="#reviews">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <!-- Search Bar -->
+                <form class="d-flex ms-lg-3" id="searchForm">
+                    <input class="form-control me-2" type="search" placeholder="Search products..." aria-label="Search"
+                        id="searchInput">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <!-- Cart Icon -->
+                <a href="#" class="btn btn-outline-primary ms-3" id="cartBtn">
+                    <i class="bi bi-cart-fill"></i> Cart <span id="cartCount">0</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+   
+    <div class="container-fluid text-white text-center p-5" id="heroSection">
+        <h1 class="display-4">Welcome to TannuRakhi</h1>
+        <p>Best products at unbeatable prices!</p>
+        <button class="btn btn-success" id="shopNowBtn">Shop Now</button>
+    </div>
+
+    <!-- Products Section -->
+    <div class="container my-5" id="products">
+        <h2 class="text-center mb-4">Our Products</h2>
+        <div class="row" id="productList">
+            
+        </div>
+    </div>
+
+    <!-- Offers Section -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Today's Offers</h2>
+        <div class="row" id="offersList">
+            
+        </div>
+    </div>
+
+    <!-- Blog Section -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Latest Blogs</h2>
+        <div class="row" id="blogList">
+            
+        </div>
+    </div>
+
+    <!-- Reviews Section -->
+    <div class="container my-5" id="reviews">
+        <h2 class="text-center mb-4">Customer Reviews</h2>
+        <div class="row" id="reviewsList">
+           
+        </div>
+    </div>
+
+
+
+    <!-- Contact Section -->
+    <form id="ContactForm">
+        <div class="container my-5" id="contact">
+            <h2 class="text-center mb-4">Contact Us</h2>
+            <div class="card mx-auto" id="contactCard">
+                <div class="card-body">
+                    <form>
+                        <div class="mb-2">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control form-control-sm" id="name" placeholder="Enter your name">
+                        </div>
+                        <div class="mb-2">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control form-control-sm" id="email"
+                                placeholder="Enter your email">
+                        </div>
+                        <div class="mb-2">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control form-control-sm" id="message" rows="3"
+                                placeholder="Write your message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-success ">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </form>
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 TannuRakhi. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
